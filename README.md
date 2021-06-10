@@ -1,2 +1,4 @@
 # Fitness_web
-Basic fitness website
+Basic fitness website,
+no js included,
+only HTML & CSS.
