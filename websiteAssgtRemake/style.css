@@ -574,7 +574,6 @@ body, html{
 
 #gallery .box img{
     width: 300px;
-    margin: 10px;
     padding: 1rem;
     border-radius: 30px;
     filter: grayscale(100%);
@@ -916,6 +915,15 @@ body, html{
    #gallery h2{
         left: 340px;
    }
+
+   #gallery .box img{
+    width: 200px;
+    /* margin: 10px; */
+    padding: 1rem;
+    border-radius: 30px;
+    filter: grayscale(100%);
+    transition: 100ms ease-in-out;
+}
 
    /* Footer */
 
