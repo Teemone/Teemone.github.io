@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
 
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 
 body, html{
     margin: 0;
@@ -57,6 +61,7 @@ body, html{
 
 .nav-bar-top .logo .stayfit{
     font-size: 1.1rem;
+    user-select: none;
 }
 
 .nav-bar-top li{
@@ -85,22 +90,17 @@ body, html{
     visibility: visible;
 }
 
-
-
 .nav-bar-top li .contain{
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    
-   
 }
-
 
  .nav-bar-top .social{
     margin: 0px 3rem;
     display: flex;
     align-items: center;
-    border: thin solid white;
+    border: 1.6px solid white;
     padding: 0 10px;
     padding-top: 5px;
     border-radius: 50px;
@@ -220,22 +220,17 @@ body, html{
     box-shadow: 0 0 15px inset white;
 }
 
-
-
 .btn-txt-container>.google svg{
     width: 20px;
     margin: 0 10px;
     z-index: 100;
-
 }
 
    
 .btn-txt-container .btns .register:hover{
-    /* margin-left: 30px; */
     background-color: transparent;
     box-shadow: 0 0 20px inset #AA15D5;
     border: 2px solid #AA15D5;
-
     font-weight: bold;
  }
 
@@ -251,7 +246,6 @@ body, html{
     color: white;
     cursor: pointer;
     font-weight: bold;
-
 }
 
 .fill-btn{
@@ -406,6 +400,11 @@ body, html{
     z-index: 100;
     color: white;
     border-color: white;
+    transition: 150ms linear;
+}
+
+#sign-up .sign-up-box button:hover{
+    box-shadow: 0 0 15px inset white;
 }
 
 #sign-up .sign-up-box input:focus{
@@ -434,125 +433,6 @@ body, html{
     z-index: 100;
     transform: rotateX(180deg);
  }
-
- 
- 
-/* Contact us */
-#message-us{
-    width: 100vw;
-    height: 90vh;
-    padding: 8rem 7rem;
-    display: flex;
-    justify-content: center;
-}
-
-#message-us .message-us-box{
-    background: black;
-    position: relative;
-    border-radius: 10px;
-    padding: 3rem;
-    overflow: hidden;
-    width: 60vw;
-
-}
-
-
-
-#message-us .message-us-box .l1{
-   position: absolute;
-   opacity: 0.1;
-   bottom: 0;
-   left: 0;
-   z-index: 10;
-   transform: scale(-1);
-}
-
-#message-us .message-us-box .l2{
-    position: absolute;
-    background-color: white;
-    opacity: 0.15;
-    bottom: 0;
-    left: 0;
-    z-index: 10;
-    /* min-height:300px ; */
-    transform: rotateX(180deg);
- }
-
- #message-us .message-us-box .l3{
-    position: absolute;
-    opacity: 0.1;
-    top: 0;
-    /* bottom: 0; */
-    left: 0;
-    z-index: 10;
-    /* min-height:300px ; */
-    /* transform: rotateX(180deg); */
- }
-
- .message-us-container{
-     display: flex;
-     flex-direction: column;
-     width: 80vw;
-     height: 100%;
-     overflow: hidden;
-     padding: 0 7rem;
-
- }
-
- #message-us .message-us-box .user-details{
-     display: flex;
-     flex-direction: column;
- }
- 
- #message-us .message-us-box .user-details input{
-    width: 50%;
-    padding: 10px 15px;
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 10px;
-    z-index: 100;
-    font-size: 1.1rem;
-
-}
-
-#message-us .message-us-box .user-details textarea{
-    width: 50%;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 10px;
-    height: 200px;
-    font-size: 1.1rem;
-    z-index: 100;
-
-}
-
-#message-us .message-us-box .user-details button{
-    width: 20%;
-    margin-top: 20px;
-    padding: 5px 15px;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    z-index: 101;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-
-}
-
-#message-us .message-us-box .user-details input:focus{
-    outline: none;
-}
-
-#message-us .message-us-box .user-details textarea:focus{
-    outline: none;
-}
-
  .wider{
     width: 100%;
 }
@@ -562,9 +442,12 @@ body, html{
 
 #gallery{
     width: 100vw;
+    margin-top: 3rem;
     display: flex;
+    padding: 0 3rem;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: black;
     position: relative;
 }
@@ -579,11 +462,12 @@ body, html{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 #gallery .box img{
-    width: 300px;
+    width: 190px;
+    height: 256px;
     padding: 1rem;
     border-radius: 30px;
     filter: grayscale(100%);
@@ -603,7 +487,7 @@ body, html{
     position: relative;
     margin-top: 10vh;
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
     background-color: black;
     overflow: hidden;
 
@@ -634,9 +518,8 @@ body, html{
 }
 #footer .bottom-elements{
     position: relative;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
-    padding-right: 225px;
 
 }
 
@@ -650,9 +533,8 @@ body, html{
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: auto;
-    left: 223px;
     color: white;
+    transform: scale(0.85);
 }
 #footer #motto .title{
     color: #AA15D5;
@@ -666,14 +548,12 @@ body, html{
 #footer .bottom-elements .social-media{
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
     justify-content: center;
-    left: 50vw;
     z-index: 100;
     padding: 1rem 1rem;
     color: white;
-    transform: scale(1.2);
+    transform: scale(0.9);
 
 }
 
@@ -701,6 +581,7 @@ body, html{
 .social-media span{
     width: 100%;
     margin: 10px 0;
+    text-align: center;
 }
 
 
@@ -708,6 +589,76 @@ body, html{
     margin-top: 10px;
     transform: scale(1.4);
 }
+
+.bottom-elements .container{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    position: relative;
+    left: 200px;
+    justify-content: center;
+    transform: scale(0.9);
+}
+
+.bottom-elements .mssg-us{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 10px;
+    left: 30vw;
+    width: 400px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1.9px solid white;
+    color: white;
+    border-radius: 10px;
+    z-index: 100;
+    max-height: 400px;
+}
+
+.mssg-us input{
+    width: 100%;
+    margin: 10px;
+    padding: 5px 8px;
+    background-color: transparent;
+    border: 1.7px solid transparent;
+    border-bottom: solid white;
+    outline: none;
+    font-size: medium;
+    color: white;
+    
+
+}
+.mssg-us textarea{
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 1.7px solid white;
+    color: white;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 100px;
+    max-width: 100%;
+    max-height: 120px;
+}
+.mssg-us button{
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-width: 1.7px;
+    transition: 150ms linear;
+}
+
+.mssg-us button:hover{
+    box-shadow: 0 0 10px inset white;
+
+}
+
+.mssg-us p{
+    font-weight: bold;
+}
+
 
 
 
@@ -722,7 +673,6 @@ body, html{
 @media screen and (max-width: 800px){
 
     /* Landing screen, nav-bar */
-
     .nav-bar-top li a{
         font-size: 1.1rem;
     }
@@ -735,8 +685,6 @@ body, html{
 
     .nav-bar-top .social{
         margin: 0px 20px;
-        
-    
     }
 
     .landing-page img{
@@ -811,7 +759,6 @@ body, html{
         width: 20px;
         margin: 0 10px;
         z-index: 100;
-    
     }
 
     /* What you'll get */
@@ -849,21 +796,17 @@ body, html{
 
     #sign-up{
         width: 100vw;
-        /* padding: 8rem; */
         display: flex;
-        /* justify-content: center; */
     }
     
     #sign-up .sign-up-box{
         background: black;
         width: 100%;
-        /* padding: 3rem; */
         height: 100%;
         display: flex;
         border-radius: 10px;
         padding: 1.5rem;
         overflow: hidden;
-        /* transform: scale(0.7); */
     }
     
     #sign-up .sign-up-box input{
@@ -892,73 +835,31 @@ body, html{
 
     }
 
-
-    /* Message us / Contact us */
-    #message-us{
-        width: 100vw;
-        height: 90vh;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #message-us .message-us-box{
-        background: black;
-        display: flex;
-        justify-content: center;
-        position: relative;
-        border-radius: 10px;
-        padding: 3rem;
-        overflow: hidden;
-    
-    }
-    
-    .message-us-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-       
-    }
-    #message-us .message-us-box .user-details{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #message-us .message-us-box .user-details input{
-       width: 100%;
-   }
-   
-   #message-us .message-us-box .user-details textarea{
-       width: 100%;
-      
-   }
-   
-   #message-us .message-us-box .user-details button{
-       width: 30%;
-      
-   }
-
    /* Gallery */
 
    #gallery h2{
-        left: 340px;
+        left: 300px;
    }
 
    #gallery .box img{
-    width: 200px;
-    /* margin: 10px; */
-    padding: 1rem;
+    width: 160px;
+    height: 200px;
+    padding: 0.5rem;
     border-radius: 30px;
     filter: grayscale(100%);
     transition: 100ms ease-in-out;
 }
 
+    #gallery .box{
+        margin: 10px 0;
+        justify-content: center;
+        padding: 0 0;
+    }
+
    /*#Footer */
 
    #footer #motto{
-    left: 60px;
-    transform: scale(0.9);    
+    transform: scale(0.85);    
     }
 
     #footer .bottom-elements .social-media{
@@ -967,13 +868,30 @@ body, html{
         position: relative;
         align-items: center;
         justify-content: center;
-        left: 40vw;
         z-index: 100;
         padding: 1rem 1rem;
         color: white;
         transform: scale(1);
         width: 25vw;
     }
+
+    .bottom-elements .container{
+        left: 40px;
+        transform: scale(0.8);
+    }
     
+    .bottom-elements .mssg-us{
+        padding: 10px;
+        left: 25vw;
+        width: 300px;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 1.9px solid white;
+        color: white;
+        border-radius: 10px;
+        z-index: 100;
+        max-height: 400px;
+    }
   
 }
