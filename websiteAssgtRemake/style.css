@@ -5,7 +5,7 @@
     font-family: tisa;
     position: relative;
     scroll-behavior: smooth;
-
+    user-select: none;
 }
 a{
     text-decoration: none;
@@ -17,7 +17,6 @@ body, html{
     padding: 0;
     overflow-x: hidden;
     position: relative;
-
 }
 
 .nav-bar-top{
@@ -392,6 +391,10 @@ body, html{
 
 #sign-up .sign-up-box textarea{
     z-index: 100;
+    min-width: 150px;
+    max-width: 230px;
+    min-height: 150px;
+    max-height: 150px;
     color: white;
     border-color: white;
 }
@@ -660,11 +663,6 @@ body, html{
 }
 
 
-
-
-
-
-
 @font-face {
     font-family: tisa;
     src: url(./imgs/tisa.ttf);
@@ -892,6 +890,245 @@ body, html{
         border-radius: 10px;
         z-index: 100;
         max-height: 400px;
+    }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+    /* Landing screen, nav-bar */
+    .nav-bar-top li a{
+        font-size: 0;
+    }
+
+    .nav-bar-top{
+        justify-content: center;
+    }
+
+    .nav-bar-top .logo{
+        position: absolute;
+        margin-left: 0;
+    }  
+
+    .nav-bar-top .social{
+        transform: scale(0);
+    }
+
+
+    .landing-page{
+        display: flex;
+        flex: 100%;
+        flex-direction: column;
+        background: #000;
+        width: 100%;
+        height: 100vh;
+        padding: 0px 3rem;
+    }
+    
+
+    .landing-page .btn-txt-container{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        position: relative;
+        justify-content: center;
+        margin: 100px 0;
+        padding: 0 20px;
+        transform: scale(1);
+        top: 10rem;
+        
+    }
+
+
+    .landing-page img{
+        padding: 0;
+        transform: scale(0.4);
+        z-index: 10;
+        margin-bottom: 30px;
+    }
+
+    .btn-txt-container .title{
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    
+    .btn-txt-container .btns{
+        display: flex;
+        padding: 10px ;
+        justify-content: center;
+        transform: scale(0.85);
+        
+    }
+    
+
+    .btn-txt-container> .or-case{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        font-size: small;
+        width: 100%;
+    
+    }
+    
+    .btn-txt-container>.google{
+        display: flex;
+        align-items: center;
+        margin: 5px auto;
+        width: 20%;
+        font-size: 0;
+        padding: 10px;
+        justify-content: center;
+    
+    }
+
+    /* What you'll get */
+
+    #what-you-get{
+        height: 50vh;
+    }
+    
+    
+    #what-you-get .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0px 10px;
+        justify-content: center;
+        padding: 5px;
+    
+    }
+    
+    #what-you-get .container p{
+        text-align: center;
+        font-size: 1rem;
+        color: #AA15D5;
+        font-weight: bold;
+        margin-top: 0;
+    
+    }
+
+    /* Sign up page */
+
+    #sign-up{
+        width: 100%;
+        padding: 10px;
+        margin-top: 3rem;
+    }
+    
+    #sign-up .sign-up-box img{
+        width: 0;
+        padding-left: 0;
+        position: relative;
+        z-index: 1000;
+        transform: scale(0);
+    }
+
+    #sign-up .sign-up-box{
+        background: black;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        border-radius: 10px;
+        /* padding: 1.5rem; */
+        overflow: hidden;
+    }
+    
+    #sign-up .sign-up-box input{
+        z-index: 100;
+        width: 150px;
+        color: white;
+        border-color: white;
+    }
+    
+    #sign-up .sign-up-box textarea{
+        z-index: 100;
+        color: white;
+        border-color: white;
+    }
+    
+    #sign-up .sign-up-box button{
+        z-index: 100;
+        color: white;
+        border-color: white;
+    }
+    
+    #sign-up .sign-up-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+   /* Gallery */
+
+   #gallery{
+    padding: 0 1rem;
+}
+
+   #gallery h2{
+       width:100vw;
+       left: 0;
+       text-align: center;
+   }
+
+   #gallery .box img{
+    width: 102.4px;
+    height: 138px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    transition: 100ms ease-in-out;
+}
+
+    #gallery .box{
+        margin: 10px 0;
+        justify-content: center;
+        padding: 0 0;
+    }
+
+   /*#Footer */
+
+   #footer #motto{
+    transform: scale(0.75); 
+    }
+
+    #footer .bottom-elements{
+        position: relative;
+        padding: 2rem 0;
+        display: flex;
+    
+    }
+
+    #footer #motto p{
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer .bottom-elements .social-media{
+        z-index: 100;
+        padding: 1rem 1rem;
+        color: white;
+        transform: scale(0.85);
+        width: 100%;
+    }
+
+    .bottom-elements .container{
+        left: 26px;
+        margin-top: 10px;
+        transform: scale(0.8);
+    }
+    
+    .bottom-elements .mssg-us{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 10px;
+        left: 15vw;
+        width: 200px;
     }
   
 }
