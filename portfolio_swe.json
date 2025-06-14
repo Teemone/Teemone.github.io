@@ -1,0 +1,152 @@
+{
+  "name": "Timothy Galadima",
+  "label": "Software Engineer | Cybersecurity Analyst",
+  "image_path": "img/default-image.png",
+  "contact": {
+    "email": "timothy.galadima01@gmail.com",
+    "phone": "0892208629",
+    "location": "Co. Limerick, Ireland"
+  },
+  "summary": "A short summary of who you are, your background, experience, and interests to give visitors a quick introduction to you.",
+  "base_url": "127.0.0.1:5500",
+  "social_links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/timothygalad",
+      "svg_path": "img/linkedin.svg"
+    },
+    {
+      "label": "Github",
+      "url": "https://linkedin.com/in/timothygalad",
+      "svg_path": "img/linkedin.svg"
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "Nigeria Social Insurance Trust Fund (NSITF)",
+      "position": "IT Specialist",
+      "url": "https://sample.com",
+      "start_date": "Jan 2023",
+      "end_date": "Dec 2023",
+      "summary": "Handle IT related issues including troubleshooting and preparing reports.",
+      "highlights": [
+        "Recovered malware-infected drives, restoring normal system operations and preventing data loss for clients",
+        "Enhanced IT support efficiency, leading to a 15% improvement in customer response time through optimized processing using Microsoft tools",
+        "Assisted clients in troubleshooting technical issues, ensuring smooth IT operations within the organization."
+      ]
+    },
+    {
+      "company": "Nhub Foundation",
+      "position": "Software Developer Intern",
+      "url": "https://sample.com",
+      "start_date": "May 2021",
+      "end_date": "Oct 2021",
+      "summary": "Learn and build industry ready websites and mobile apps",
+      "highlights": [
+        "Built on-demand website and mobile app solutions for clients, leveraging technologies such as; Java and Kotlin for mobile apps, while HTML, CSS and JavaScript for websites",
+        "Discussed strategies to improve mobile app performance with stakeholders. Results show a 20% improvement in user experience",
+        "Trained 15 students to build portfolio websites."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Sapien",
+      "summary": "AI assistant mobile app",
+      "url": "https://sample.com",
+      "highlights": [
+        "Utilises Gemini Api to process user prompts and provide responses",
+        "Incorporates Room, Firebase, OAuth APIs for persistence and authentication",
+        "User management and access control"
+      ],
+      "images": [ ]
+    },
+    {
+      "title": "Easy Home Workouts",
+      "summary": "Health & Fitness app",
+      "url": "https://sample.com",
+      "highlights": [
+        "Built to provide access to a well curated list of common exercises",
+        "Keeps track of user progress by leveraging data persistence APIs such as ROOM and Preferences Datastore.",
+        "Designed to be user-friendly, with an intuitive navigation system"
+      ],
+      "images": []
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "organization": "Limerick Antique Shop",
+      "position": "Position One",
+      "url": "https://sample.com",
+      "start_date": "01/01/2020",
+      "end_date": "Present",
+      "summary": "Short summary about present volunteer work",
+      "highlights": [
+        "First Duty of Current Organization",
+        "Second Duty of Current Organization",
+        "Third Duty of Current Organization"
+      ]
+    },
+    {
+      "organization": "Bingham university",
+      "position": "Director of Software",
+      "url": "https://sample.com",
+      "start_date": "Jan 2021",
+      "end_date": "Dec 2021",
+      "summary": "",
+      "highlights": [
+        "Led a 4-man team to victory in a hackathon contest organized by the department academic staf",
+        "Trained a group of 20 students to build deployment ready mobile applications. Leveraging technologies such as Java, Kotlin and JUnit.",
+        "Guided 30 students to fix bugs in their codes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Griffith College",
+      "location": "Dublin, Ireland",
+      "url": "https://sample.com",
+      "degrees": [
+        "Master of Science in Network and Information Security"
+      ],
+      "honors": [],
+      "gpa_cumulative": "3.5",
+      "gpa_major": "4.0",
+      "graduation_date": "01/01/2005"
+    },
+    {
+      "institution": "Bingham University",
+      "location": "Nasarawa State, Nigeria",
+      "url": "https://sample.com",
+      "degrees": ["Bachelor of Science in Computer Science"],
+      "honors": [
+        "Best graduating student for class of 2022",
+        "Best graduating student in Faculty of Computing",
+        "Best graduating student in Department of Computer Science"
+      ],
+      "gpa_cumulative": "4.88",
+      "gpa_major": "5.0",
+      "graduation_date": "Sept 2022"
+    }
+  ],
+  "skills": [
+     {
+      "name": "Android development, Jetpack Compose, Kotlin, REST APIs, MVVM",
+      "proficiency": 80,
+      "proficiency_label": "Advanced"
+    },
+    {
+      "name": "Python, Django, HTML, CSS",
+      "proficiency": 70,
+      "proficiency_label": "Intermediate"
+    }
+  ],
+  "interests": [],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "references": []
+}
