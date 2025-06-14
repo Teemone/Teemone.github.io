@@ -17,8 +17,8 @@
     },
     {
       "label": "Github",
-      "url": "https://linkedin.com/in/timothygalad",
-      "svg_path": "img/linkedin.svg"
+      "url": "https://github.com/Teemone",
+      "svg_path": "img/github.svg"
     }
   ],
   "work_experience": [
@@ -76,16 +76,12 @@
   "volunteer_experience": [
     {
       "organization": "Limerick Antique Shop",
-      "position": "Position One",
-      "url": "https://sample.com",
-      "start_date": "01/01/2020",
-      "end_date": "Present",
-      "summary": "Short summary about present volunteer work",
-      "highlights": [
-        "First Duty of Current Organization",
-        "Second Duty of Current Organization",
-        "Third Duty of Current Organization"
-      ]
+      "position": "",
+      "url": "",
+      "start_date": "2025",
+      "end_date": "2025",
+      "summary": "Cleaning and organising items",
+      "highlights": []
     },
     {
       "organization": "Bingham university",
@@ -105,19 +101,19 @@
     {
       "institution": "Griffith College",
       "location": "Dublin, Ireland",
-      "url": "https://sample.com",
+      "url": "https://www.griffith.ie/",
       "degrees": [
         "Master of Science in Network and Information Security"
       ],
       "honors": [],
-      "gpa_cumulative": "3.5",
-      "gpa_major": "4.0",
-      "graduation_date": "01/01/2005"
+      "gpa_cumulative": "",
+      "gpa_major": "",
+      "graduation_date": ""
     },
     {
       "institution": "Bingham University",
       "location": "Nasarawa State, Nigeria",
-      "url": "https://sample.com",
+      "url": "https://binghamuni.edu.ng/v2/",
       "degrees": ["Bachelor of Science in Computer Science"],
       "honors": [
         "Best graduating student for class of 2022",
